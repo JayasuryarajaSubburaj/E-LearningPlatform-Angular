@@ -1,0 +1,6 @@
+<div class="languages">
+  <button *ngFor="let language of languages" [routerLink]="['/mcq-' + language.toLowerCase()]">{{ language }}</button>
+</div>
+
+
+

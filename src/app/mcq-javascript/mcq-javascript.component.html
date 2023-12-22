@@ -1,0 +1,13 @@
+
+<div *ngFor="let question of mcqQuestions">
+  <p>{{ question.question }}</p>
+  <ul>
+    <li *ngFor="let option of question.options">
+      <label>
+        <input type="radio" name="question{{ question.id }}" [(ngModel)]="question.selectedOption" [value]="option">
+        {{ option }}
+      </label>
+    </li>
+  </ul>
+  <p>Selected Answer: {{ question.selectedOption }}</p>
+</div>

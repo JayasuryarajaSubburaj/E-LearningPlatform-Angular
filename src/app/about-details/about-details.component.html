@@ -1,0 +1,12 @@
+<div>
+  <h2>About Us</h2>
+  <p><strong>Mission:</strong> {{ aboutDetails.mission }}</p>
+  <p><strong>Vision:</strong> {{ aboutDetails.vision }}</p>
+
+  <div>
+    <h3>Values</h3>
+    <ul>
+      <li *ngFor="let value of aboutDetails.values">{{ value }}</li>
+    </ul>
+  </div>
+</div>

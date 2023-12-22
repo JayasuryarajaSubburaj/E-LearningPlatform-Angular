@@ -1,0 +1,16 @@
+<div>
+  <h2>Contact Details</h2>
+  <p><strong>Organization Name:</strong> {{ contactDetails.organizationName }}</p>
+  <p><strong>Email:</strong> {{ contactDetails.email }}</p>
+  <p><strong>Phone:</strong> {{ contactDetails.phone }}</p>
+  <p><strong>Address:</strong> {{ contactDetails.address }}</p>
+
+  <div>
+    <h3>Social Media</h3>
+    <ul>
+      <li><a href="{{ contactDetails.socialMedia.facebook }}" target="_blank" style="text-decoration: none;">Facebook</a></li>
+      <li><a href="{{ contactDetails.socialMedia.twitter }}" target="_blank" style="text-decoration: none;">Twitter</a></li>
+      <li><a href="{{ contactDetails.socialMedia.linkedin }}" target="_blank" style="text-decoration: none;">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
